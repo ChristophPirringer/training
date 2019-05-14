@@ -1,0 +1,168 @@
+// The Block, Element, Modifier Methodology 
+// .block   block represents the higher level of an abstraction or component.
+// .block__element   block__element represents a descendent of .block that helps form.block as a whole.
+// .block--modifier  block--modifier represents a different state or version of .block.
+
+
+// variables
+
+$font-stack:    Helvetica, sans-serif
+$primary-color: darkviolet
+$background-color: lightblue
+$title-color: blue
+$menu-background: lightgrey
+
+// imports
+@import "browserversions"
+
+// mixins
+@mixin border-radius($radius) 
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+
+
+
+// SASS nesting
+nav
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+		background: $menu-background
+	
+	li
+		display: inline-block
+		@include border-radius(40px)
+
+	a
+		display: block
+		padding: 6px 12px
+		text-decoration: none
+		color: blue
+
+
+.message 
+	border: 1px solid #ccc
+	padding: 10px
+	color: #333
+	margin: 5px
+
+
+
+// extensions
+.success 
+	@extend .message
+	border-color: green
+
+
+
+// operators
+article[role="main"] 
+	float: left
+	width: 600px / 960px * 100%
+
+
+
+// ___________ Header Styling Start ___________
+
+// ___________ Header Styling End _____________
+
+
+
+// ___________ Footer Styling Start ___________
+
+// ___________ Footer Styling End _____________
+
+
+
+// ___________ Content-Container Styling Start ___________
+
+// ___________ Content-Container Styling End _____________
+
+
+
+// ___________ Landing Page Styling Start ___________
+
+// ___________ Landing Page Styling End _____________
+
+
+// ######################################################################################################
+
+
+// ___________ Breakpoint Styling Start ___________
+
+
+
+	// ##Device = Desktops
+	// ##Screen = 1281px to higher resolution desktops
+
+
+	@media (min-width: 1281px) 
+
+	// /*CSS goes here*/
+
+
+
+	
+	// 	##Device = Laptops, Desktops
+	// 	##Screen = B/w 1025px to 1280px
+	
+
+	@media (min-width: 1025px) and (max-width: 1280px) 
+
+	// /*CSS goes here*/
+
+
+
+	
+	// 	##Device = Tablets, Ipads (portrait)
+	// 	##Screen = B/w 768px to 1024px
+	
+
+	@media (min-width: 768px) and (max-width: 1024px) 
+
+	// /*CSS goes here*/
+
+
+
+	
+	// 	##Device = Tablets, Ipads (landscape)
+	// 	##Screen = B/w 768px to 1024px
+	
+
+	@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 
+
+	// /*CSS goes here*/
+
+
+
+	
+	// 	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	// 	##Screen = B/w 481px to 767px
+	
+
+	@media (min-width: 481px) and (max-width: 767px) 
+
+	// /*CSS goes here*/
+
+
+
+	
+	// 	##Device = Most of the Smartphones Mobiles (Portrait)
+	// 	##Screen = B/w 320px to 479px
+	
+
+	@media (min-width: 320px) and (max-width: 480px) 
+
+	// CSS goes here
+
+
+
+/*___________ Breakpoint Styling End _____________*/
+
+
+
+
+

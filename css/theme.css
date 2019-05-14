@@ -1,0 +1,40 @@
+/*___________ Header Styling Start ___________ */
+nav .browser-alert {
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: orange; }
+
+/*___________ Header Styling End _____________ */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: lightgrey; }
+nav li {
+  display: inline-block;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  border-radius: 40px; }
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: blue; }
+
+.message, .success {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+  margin: 5px; }
+
+.success {
+  border-color: green; }
+
+article[role="main"] {
+  float: left;
+  width: 62.5%; }
+
+/*___________ Breakpoint Styling End _____________ */
+
+/*# sourceMappingURL=theme.css.map */
